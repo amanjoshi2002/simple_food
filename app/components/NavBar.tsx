@@ -17,7 +17,7 @@ function NavBar() {
   };
 
   return (
-    <Navbar>
+    <Navbar className='bg-yellow-400	'>
       <Navbar.Start>
         <Dropdown>
           <Button tag="label" color="ghost" shape="circle" tabIndex={0}>
@@ -25,7 +25,7 @@ function NavBar() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
             </svg>
           </Button>
-          <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
+          <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1] text-yellow-400">
           <Dropdown.Item onClick={() => navigateToPage('1')}>ALL RECIPE</Dropdown.Item>
             <Dropdown.Item onClick={() => navigateToPage('/')}>HOME</Dropdown.Item>
             <Dropdown.Item onClick={() => navigateToPage('3')}>SALADS</Dropdown.Item>
@@ -52,7 +52,7 @@ function NavBar() {
             open={visible}
             onClickOverlay={toggleVisible}
             side={(
-              <Menu className="p-4 w-80 h-full bg-base-200 text-base-content">
+              <Menu className="p-4 w-80 h-full bg-base-200  text-yellow-400">
                 <Menu.Item>
                   <Form>
                     <Input bordered type="text" placeholder="Search" className="w-32 md:w-auto" />
